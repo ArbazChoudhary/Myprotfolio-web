@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            flex: 1;
+            padding: 20px;
+        }
+        .profile-photo {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+        section {
+            padding: 20px 0;
+        }
+        .project {
+            background-color: white;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .download-btn:hover {
+            background-color: #00509e;
+        }
+        footer {
+            text-align: center;
+            background-color: #003366;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        a {
+            color: #003366;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <div style="display: flex; align-items: center; margin-top: 20px;">
+                <img src="https://terraformprojectarbaz.s3.us-west-2.amazonaws.com/profile-pic.png" 
+                     alt="Profile Photo" class="profile-photo" style="margin-right: 20px;">
+                <p style="font-size: 1.2em; line-height: 1.6; font-weight: 300;">
+                    Hello! I'm Arbaz Choudhary, a recent graduate in Electronics and Telecommunication Engineering. 
+                    I'm passionate about DevOps and cloud computing, aspiring to excel as an AWS DevOps Engineer, 
+                    combining theoretical expertise with practical project implementation. Eager to contribute innovative 
+                    solutions for seamless cloud infrastructure and automation.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>DevOps Project: Setup CI/CD Pipeline using Jenkins</h3>
+                <p><strong>Duration:</strong> Aug 2024 - Sep 2024</p>
+                <p>In this project, I implemented a CI/CD pipeline to automate the deployment of a Django To-Do app hosted on an EC2 instance. The pipeline enhanced the development workflow, enabling smooth builds, testing, and deployments.</p>
+                <p><strong>Objectives:</strong></p>
+                <ul>
+                    <li>Automate Deployment: Set up a CI/CD pipeline for seamless deployment.</li>
+                    <li>Ensure Portability: Use Docker to containerize the Django app.</li>
+                    <li>Improve Workflow: Implement Jenkins for efficient integration and deployment.</li>
+                </ul>
+                <p><strong>Key Steps:</strong></p>
+                <ul>
+                    <li><strong>Provisioning:</strong> Deployed an EC2 instance and installed Jenkins for creating the CI/CD environment.</li>
+                    <li><strong>Pipeline Configuration:</strong> Configured Jenkins to automate code retrieval from GitHub, build, and deploy.</li>
+                    <li><strong>Docker Integration:</strong> Dockerized the Django app by creating a Dockerfile, ensuring the app runs consistently in various environments.</li>
+                    <li><strong>Deployment Automation:</strong> Developed scripts to automate the deployment process, integrating them into the Jenkins pipeline for smooth updates.</li>
+                    <li><strong>Testing:</strong> Integrated automated tests in Jenkins to verify functionality before deployment.</li>
+                </ul>
+                <p><strong>Challenges & Solutions:</strong></p>
+                <ul>
+                    <li>Jenkins Setup: Resolved plugin and configuration issues with community resources.</li>
+                    <li>Docker Compatibility: Adjusted the Dockerfile to ensure compatibility with the EC2 environment.</li>
+                </ul>
+                <p><strong>Outcome:</strong></p>
+                <ul>
+                    <li>Streamlined Process: The CI/CD pipeline reduced deployment errors and manual intervention.</li>
+                    <li>Efficiency: Automated testing and containerization improved consistency and speed in application updates.</li>
+                </ul>
+                <p><strong>Technologies Used:</strong></p>
+                <ul>
+                    <li>Jenkins: CI/CD automation.</li>
+                    <li>EC2: Application hosting.</li>
+                    <li>Docker: Application containerization.</li>
+                    <li>GitHub: Version control.</li>
+                </ul>
+                <p>This project showcases my ability to implement and manage CI/CD pipelines using modern DevOps tools.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: Automated Deployment of Portfolio Website using Terraform</h3>
+                <p><strong>Duration:</strong> (Specify the duration here)</p>
+                <p>In this project, I leveraged Terraform to automate the deployment of my portfolio website, effectively defining infrastructure configuration as code. This approach ensured consistency and reproducibility across different environments, simplifying the deployment process.</p>
+                <p><strong>Key features of the project include:</strong></p>
+                <ul>
+                    <li><strong>Infrastructure as Code:</strong> Utilized Terraform to manage and provision infrastructure, enhancing deployment efficiency and minimizing manual errors.</li>
+                    <li><strong>S3 Bucket Creation:</strong> Orchestrated the setup of an Amazon S3 bucket to host the static website. This setup was optimized for cost-effectiveness and performance, ensuring quick load times and minimal expenses.</li>
+                    <li><strong>Portfolio Showcase:</strong> Deployed a visually appealing portfolio website designed with HTML and CSS, showcasing my personal projects and professional achievements. This served as an essential tool for demonstrating my skills to potential employers and collaborators.</li>
+                    <li><strong>Security Implementation:</strong> Implemented robust security measures by configuring bucket policies that allow access from any IP address. This strategic decision ensured that my portfolio remained visible to potential employers and collaborators, while still adhering to best practices for security.</li>
+                </ul>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:choudharyarbaz2942@gmail.com">choudharyarbaz2942@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/arbaz-choudhary/" target="_blank">LinkedIn</a></p>
+            <div class="contact-container">
+                <a href="https://drive.google.com/file/d/13nNXm0ch8CDBjtI8lJjSrTehFM81FKz9/view?usp=sharing" class="download-btn" download>Download My Resume</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Arbaz Choudhary</p>
+    </footer>
+</body>
+</html>
